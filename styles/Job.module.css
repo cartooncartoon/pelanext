@@ -1,0 +1,64 @@
+
+.joblisting {
+    display: inline-flex;
+    cursor: pointer;
+    padding: 5;
+    gap: 12px;
+
+  }
+
+  .jobdesc {
+      display: grid;
+      margin-left: 5;
+  }
+
+  .scrollable {
+    position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Customize website's scrollbar like Mac OS
+  Not supports in Firefox and IE */
+  
+  /* total width */
+  .scrollbar::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px;
+  }
+  
+  /* background of the scrollbar except button or resizer */
+  .scrollbar::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  /* scrollbar itself */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    border: 4px solid #f4f4f4;
+  }
+  
+  /* set button(top and bottom of the scrollbar) */
+  .scrollbar::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  /* div box */
+  
+  .scrollbar {
+    min-width: 150px;
+    background: #fff;
+    overflow-y: scroll;
+  }
+  .overflow {
+    min-height: 100vh;
+  }
+  
+.desc {
+    height: 300px;
+    cursor: default;
+}
